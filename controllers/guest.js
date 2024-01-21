@@ -2,9 +2,8 @@ import { Guest } from "../models/guest.js";
 
 export const save = async (req, res, next) => {
     try {
-        console.log(req.body)
-        const { name, email, rsvp } = req.body;
-        await Guest.create({ name, email, rsvp });
+        const { name, number, rsvp } = req.body;
+        await Guest.create({ name, number, rsvp });
         res.status(200).json({
             success: true,
             message: "successful!",
