@@ -5,16 +5,12 @@ const schema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    phone_number: {
-        type: String,
-        required: true,
-    },
     email: {
         type: String,
         required: true,
     },
-    food_pref: {
-        type: String,
+    rsvp: {
+        type: Boolean,
         required: true,
     },
 });
